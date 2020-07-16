@@ -43,9 +43,24 @@ public class Solution {
 
 		fishMethods();
 		
-		
+		System.out.println("\n==Question D.1, D.2==");
+
+		butterFlyFeatures();
 		
 }
+
+	private static void butterFlyFeatures() {
+		Butterfly butterfly = new Butterfly();
+		
+		butterfly.fly();
+		butterfly.setFeature("A butterfly does not make a sound");
+		
+		System.out.println(butterfly.getFeature());
+		Caterpillar caterpillar = new Caterpillar();
+		
+		caterpillar.fly();
+		caterpillar.walk();
+	}
 
 	private static void parrotMethods() {
 		Parrot parrotWithDogs = new HouseA();
@@ -108,6 +123,9 @@ public class Solution {
 
 		Dolphin dolphin = new Dolphin();
 		dolphin.swim();
+		
+		
+		
 	}
 	
 }

@@ -69,4 +69,52 @@ class Rooster extends Chicken {
 	
 }
 
+class Butterfly extends Bird {
+
+	public String feature;
+
+	public String getFeature() {
+		return feature;
+	}
+
+	public void setFeature(String feature) {
+		this.feature = feature;
+	}
+	
+	public Butterfly() {
+		
+	}
+	
+	public boolean fly() {
+		System.out.println("Butterfly can fly");
+		return true;
+	}
+	
+}
+
+
+class Caterpillar extends Butterfly {
+
+	public String feature;
+
+	public String getFeature() {
+		return feature;
+	}
+
+	public void setFeature(String feature) {
+		this.feature = feature;
+	}
+	
+	
+	public boolean fly() {
+		System.out.println("Catterpillar cannot fly");
+		return false;
+	}
+	public boolean walk() {
+		System.out.println("Catterpillars can walk");
+		return true;
+	}
+}
+
+
 

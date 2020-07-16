@@ -29,6 +29,32 @@ public class Solution {
 		Bird chicken = new Chicken();
 		chicken.sing();
 		chicken.fly();
+		
+		System.out.println("Question A.3 ===============");
+
+		Chicken rooster = new Rooster();
+		rooster.sing();
+
+		System.out.println("Question A.4 ===============");
+
+		Parrot parrotWithDogs = new HouseA();
+		parrotWithDogs.sing();
+
+		Parrot parrotWithCats = new HouseB();
+		parrotWithCats.sing();
+
+		Parrot parrotInaFarm = new HouseC();
+		parrotInaFarm.sing();
+
+		Parrot parrotWithPhone = new HouseD();
+		parrotWithPhone.sing();
+
+		Parrot parrotWithDuck = new HouseE();
+		parrotWithDuck.sing();
+
+		
+		
+		
 }
 	
 }

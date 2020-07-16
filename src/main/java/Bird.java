@@ -26,4 +26,33 @@ public class Bird implements Animal{
 }
 
 
+class Duck extends Bird {
+
+	@Override
+	public boolean sing() {
+		System.out.println("Ducks say :: Quack, quack");
+		return true;
+	}
+
+	@Override
+	public boolean swim() {
+		System.out.println("Ducks can swim :)");
+		return true;
+	}
+}
+
+class Chicken extends Bird {
+	@Override
+	public boolean sing() {
+		System.out.println("Chickens say :: Cluck, cluck");
+		return true;
+	}
+
+	@Override
+	public boolean fly() {
+		System.out.println("Chickens cannot fly");
+		return false;
+	}
+}
+
 

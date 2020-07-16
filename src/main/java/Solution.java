@@ -20,6 +20,15 @@ public class Solution {
 		 
 		bird.sing();
 		
+		System.out.println("==Question A.2==");
+
+		Bird duck = new Duck();
+		duck.sing();
+		duck.swim();
+
+		Bird chicken = new Chicken();
+		chicken.sing();
+		chicken.fly();
 }
 	
 }

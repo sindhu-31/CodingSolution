@@ -1,5 +1,8 @@
 package main.java;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
 
 	public static void main(String[] args) {
@@ -47,7 +50,58 @@ public class Solution {
 
 		butterFlyFeatures();
 		
+		System.out.println("\n==Question E.1==");
+		
+		countFeatures();
+		
 }
+
+	private static void countFeatures() {
+		List<Animal> animalList = new ArrayList<>();
+		
+		animalList.add(new Bird());
+		animalList.add(new Duck());
+		animalList.add(new Chicken());
+		animalList.add(new Rooster());
+		animalList.add(new Parrot());
+		animalList.add(new Fish());
+		animalList.add(new Shark());
+		animalList.add(new ClownFish());
+		animalList.add(new Dolphin());
+		animalList.add(new Frog());
+		animalList.add(new Dog());
+		animalList.add(new Butterfly());
+		animalList.add(new Caterpillar());
+		animalList.add(new Cat());
+		
+		int flyCount = 0;
+		int walkCount = 0;
+		int singCount = 0;
+		int swimCount = 0;
+		
+		for (Animal animal : animalList) {
+			
+			if (animal.fly()) {
+				flyCount++;
+			}
+			if (animal.walk()) {
+				walkCount++;
+			}
+			
+			if (animal.sing()) {
+				singCount++;
+			}
+			if (animal.swim()) {
+				swimCount++;
+			}
+			
+		}
+		
+		System.out.println("Animals that can fly count upto :"+flyCount);
+		System.out.println("Animals that can swim count upto :"+swimCount);
+		System.out.println("Animals that can walk count upto :"+walkCount);
+		System.out.println("Animals that can sing count upto :"+singCount);
+	}
 
 	private static void butterFlyFeatures() {
 		Butterfly butterfly = new Butterfly();

@@ -60,7 +60,7 @@ class Chicken extends Bird {
 class Rooster extends Chicken {
 	@Override
 	public boolean sing() {
-		System.out.println("Cock-a-doodle-doo");
+		System.out.println("Roosters say :: Cock-a-doodle-doo");
 		return true;
 	}
 	

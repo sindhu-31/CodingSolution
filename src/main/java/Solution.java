@@ -1,7 +1,9 @@
 package main.java;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map.Entry;
 
 public class Solution {
 
@@ -54,7 +56,47 @@ public class Solution {
 		
 		countFeatures();
 		
+		System.out.println("\n==Bonus question 1==");
+		roosterSounds();
+		
 }
+
+	private static void roosterSounds() {
+		Rooster rooster1 = new Rooster();
+		HashMap<String,String> newList = rooster1.getRoosterSounds();
+		
+		
+		newList.put("Danish","kykyliky");
+		newList.put("Dutch","kukeleku");
+		newList.put("Finnish","kukko kiekuu");
+		newList.put("French","cocorico");
+		newList.put("German","kikeriki");
+		newList.put("Greek","kikiriki");
+		newList.put("Hebrew","coo-koo-ri-koo");
+		newList.put("Hungarian", "kukuriku");
+		newList.put("Italian","chicchirichi");
+		newList.put("Japanese","ko-ke-kok-ko-o");
+		newList.put("Portuguese","cucurucu");
+		newList.put("Russian","kukareku");
+		newList.put("Swedish","kuckeliku");
+		newList.put("Turkish","kuk-kurri-kuuu");
+		newList.put("Urdu","kuklooku");
+												
+		
+		for (Entry<String, String> entry : newList.entrySet())
+		{
+			System.out.println( "Key :" +entry.getKey() + " ; Value :" +entry.getValue());
+		}
+		
+		newList.put("Tamil", "cocoracoooookoo");
+		
+		
+		
+		for (Entry<String, String> entry : newList.entrySet())
+		{
+			System.out.println( "After adding new second lang : Key :" +entry.getKey() + " ; Value :" +entry.getValue());
+		}
+	}
 
 	private static void countFeatures() {
 		List<Animal> animalList = new ArrayList<>();

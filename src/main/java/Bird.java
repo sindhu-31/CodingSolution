@@ -1,5 +1,6 @@
 package main.java;
 
+import java.util.HashMap;
 
 public class Bird implements Animal{
 
@@ -65,7 +66,17 @@ class Rooster extends Chicken {
 	}
 	
 	
-	
+	HashMap<String,String> roosterSounds = new HashMap<String,String>();
+
+
+	public HashMap<String, String> getRoosterSounds() {
+		return roosterSounds;
+	}
+
+
+	public void setRoosterSounds(HashMap<String, String> roosterSounds) {
+		this.roosterSounds = roosterSounds;
+	}
 	
 }
 
